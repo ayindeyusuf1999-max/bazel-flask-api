@@ -1,4 +1,4 @@
-﻿py_library(
+py_library(
     name = "main_lib",
     srcs = ["main.py"],
     visibility = ["//visibility:public"],
