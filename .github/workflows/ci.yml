@@ -20,10 +20,10 @@ jobs:
           bazelisk-version: 1.x
 
       - name: Install Python deps
-        run: pip install flask
+        run: pip install flask pytest
 
       - name: Build with Bazel
         run: bazel build //app:server
 
-      - name: Test with Bazel
-        run: bazel test //tests:test_main --test_output=all
+      - name: Test with pytest directly
+        run: pytest tests/test_main.py -v
