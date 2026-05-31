@@ -1,4 +1,4 @@
-﻿workspace(name = "bazel_flask_api")
+workspace(name = "bazel_flask_api")
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 

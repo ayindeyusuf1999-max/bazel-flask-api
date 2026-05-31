@@ -1,3 +1,5 @@
+load("@rules_python//python:defs.bzl", "py_library", "py_binary")
+
 py_library(
     name = "main_lib",
     srcs = ["main.py"],
